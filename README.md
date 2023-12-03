@@ -1,36 +1,5 @@
 # Neovim Files of Sebastian Levano
 
-# Requeriments:
+This is a minimalist version of mi Neovim Config, here doesn't use plugins, just basic Neovim
 
-## Pip (Python):
-
-- autopep8
-
-`pip install autopep8`
-
-## NPM (NodeJS):
-
-- Angular Language Server
-- Tailwind CSS
-- Volar Vue Language Server
-- Intelephense
-- Prettier
-- Pyright
-- TypeScript Language Server
-- Emmet-ls
-- Emmet-ls
-- TypeScript
-- VsCode LangServers Extracted
-
-`npm install -g intelephense @volar/vue-language-server tailwindcss @angular/language-server emmet-ls prettier pyright typescript typescript-language-server vscode-langservers-extracted anguageserver`
-
-## Cargo (Rust):
-
-- Stylua
-
-`cargon install stylua`
-
-## Programs for TreeSitter:
-
-- Visual Studio Build Tools
-- Clang (LLVM) 
+It's very useful to the VSCode extension: [VSCode Neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim)

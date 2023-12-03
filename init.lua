@@ -1,31 +1,9 @@
+vim.g.mapleader = " "
 if vim.g.vscode then
-	require("keymappings")
-	require("settings")
+  require("vscode")
 else
-	vim.g.mapleader = " "
-	require("plugins")
-	require("plugins_settings")
-	require("lsp")
 	require("keymappings")
 	require("settings")
-
-	local o = vim.o
-	local cmd = vim.cmd
-
-	o.termguicolors = true
-	o.background = "dark"
-
-	-- Themes and configs
-	-- cmd("colorscheme moonfly")
-	-- cmd("colorscheme nord")
-	-- cmd("colorscheme tender")
-	-- cmd("colorscheme catppuccin-mocha")
-	-- cmd("colorscheme sonokai")
-	-- cmd("colorscheme gruvbox-baby")
-	--   vim.g.neosolarized_italic = 1
-	-- cmd("colorscheme NeoSolarized")
-  -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
-  cmd("colorscheme catppuccin-macchiato")
 end
 
 -- Mapping helper

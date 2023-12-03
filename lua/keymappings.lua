@@ -11,8 +11,8 @@ mapper("n", "<Leader>qq", ":q!<CR>")
 mapper("n", "<Leader>qa", ":qa!<CR>")
 
 -- Change Buffers
-mapper("n", "<C-n>", ":bnext<CR>")
-mapper("n", "<C-p>", ":bprevious<Return>")
+mapper("n", "<Tab>", ":bnext<CR>")
+mapper("n", "<S-Tab>", ":bprevious<Return>")
 
 -- Delete buffers
 mapper("n", "<Leader>bd", ":bdelete<CR>")
@@ -26,6 +26,9 @@ mapper("t", "<Esc>", "<C-\\><C-n>")
 -- Move
 mapper("x", "K", ":move '<-2<CR>gv-gv")
 mapper("x", "J", ":move '>+1<CR>gv-gv")
+
+-- Clear highlights
+mapper("n", "<F9>", ":noh<CR>")
 
 -- Compiler C++
 vim.api.nvim_command("autocmd filetype cpp nnoremap <f5> :w <bar> !g++ % <cr>")
