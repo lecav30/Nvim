@@ -1,3 +1,6 @@
 vim.g.mapleader = " "
-require("keymappings")
-require("settings")
+require("core.keymaps")
+require("core.settings")
+require("config.lazy")
+
+vim.cmd.colorscheme "catppuccin"
